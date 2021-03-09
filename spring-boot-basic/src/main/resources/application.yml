@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+#上传文件大小配置，设置为-1无限制
+spring:
+  servlet:
+    multipart:
+      max-file-size: 300MB
+      max-request-size: 300MB
+
+family:
+  family-name: happy family
+  father:
+    name: jackson
+    age: ${random.int(25,40)}
+  mother:
+    name: MyLittlePony
+    alias:
+      - lovely
+      - alice
+  child:
+    name: jack
+    age: ${random.int(3,12)}
+    friends:
+      - hobby: football
+        gender: male
+      - hobby: sing
+        gender: female
